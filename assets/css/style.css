@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hind:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+header > div {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px, 10%;
+  background-color: white;
+  border-bottom: 1px solid #00cc66;
+}
+.inner-logo img {
+  max-width: 120px;
+  height: auto;
+}
+.inner-menu > ul {
+  display: flex;
+}
+.submenu {
+  background: white;
+  list-style: none;
+  display: none;
+  position: absolute;
+  margin-top: 12px;
+  width: 15%;
+}
+.submenu > li {
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 20px;
+  margin: 0px 5px;
+  border: 0.1px solid #f2f2f2;
+  border-collapse: collapse;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.submenu > li > a {
+  color: black;
+}
+
+.submenu > li:hover {
+  font-weight: bold;
+  color: white;
+  background: #00cc66;
+}
+.submenu > li:hover > a {
+  color: white;
+}
+
+.inner-menu > ul > li:hover > .submenu {
+  display: block;
+}
+/* .inner-menu > ul > li:hover > .submenu > li:hover > a {
+  color: white;
+  background: #00cc66;
+} */
+.inner-menu > ul > li > a {
+  font-size: 16px;
+  text-transform: capitalize;
+
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: all 0.42s ease;
+  background-color: white; /* màu be nhạt */
+  color: #222;
+  border: none;
+  border-radius: 999px;
+  margin-right: 20px;
+}
+.inner-menu > ul > li > a:hover {
+  color: white;
+  background-color: #00cc66; /* nền thay đổi khi hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* đổ bóng nhẹ */
+}
+
+.icon {
+  align-items: center;
+  display: flex;
+}
+.icon > a > i {
+  margin-right: 20px;
+  color: black;
+  font-size: 20px;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  background-color: #f8f8f8;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.search-box input::placeholder {
+  color: #bbb;
+}
+
+.search-box .icon {
+  color: #888;
+  font-size: 18px;
+}
