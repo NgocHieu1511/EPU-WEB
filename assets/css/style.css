@@ -120,3 +120,22 @@ header > div {
   color: #888;
   font-size: 18px;
 }
+.accountMenu {
+  background: white;
+  list-style: none;
+  display: none;
+  position: absolute;
+  margin-top: 12px;
+  width: 15%;
+  right: 0;
+}
+.accountMenu > li {
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 20px;
+  margin: 0px 5px;
+  border: 0.1px solid #f2f2f2;
+  border-collapse: collapse;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
